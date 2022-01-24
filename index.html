@@ -11,11 +11,11 @@
     <div class="w3-container">
     </div>
     <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="openKota('profile')">My Profile</button>
-        <button class="w3-bar-item w3-button" onclick="openKota('Gotoubun')">Gotoubun no Hanayome</button>
-        <button class="w3-bar-item w3-button" onclick="openKota('knnw')">Kimi No Nawa</button>
-        <button class="w3-bar-item w3-button" onclick="openKota('ansatsu')">Ansatsu Kyoushitsu</button>
-        <button class="w3-bar-item w3-button" onclick="openKota('jjk')">Jujutsu Kaisen</button>
+        <button class="w3-bar-item w3-button" onclick="openAnime('profile')">My Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openAnime('Gotoubun')">Gotoubun no Hanayome</button>
+        <button class="w3-bar-item w3-button" onclick="openAnime('knnw')">Kimi No Nawa</button>
+        <button class="w3-bar-item w3-button" onclick="openAnime('ansatsu')">Ansatsu Kyoushitsu</button>
+        <button class="w3-bar-item w3-button" onclick="openAnime('jjk')">Jujutsu Kaisen</button>
     </div>
     <div class="w3-container kota w3-animate-zoom">
         <br><br>
@@ -23,7 +23,7 @@
     </div>
     <div id="profile" class="w3-container kota w3-animate-opacity" style="display:none">
         <h2>Profile</h2>
-        <img src="josi.JPG" width="30%">
+        <img src="josi.JPG" width="100%" height="30%">
         <p><b>Jovanka Siginendra</b></p>
         <p><b>10121209</b></p>
         <p><b>IF-6</b></p>
@@ -73,9 +73,9 @@
         <a href="index.html">back</a>
     </div>
     <script>
-    function openKota(namaKota) {
+    function openAnime(namaAnime) {
     var i;
-    var x = document.getElementsByClassName("kota");
+    var x = document.getElementsByClassName("anime");
     for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
     }
