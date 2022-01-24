@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>
+        W3.CSS
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://w3schools.com/w3css/4/w3.css">
+</head>
+<body style bgcolor="grey">
+    <img src="mata.jfif" alt="atas" style="width:100%" height="40%">
+    <div class="w3-container">
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openKota('profile')">My Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Gotoubun')">Gotoubun no Hanayome</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('knnw')">Kimi No Nawa</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('ansatsu')">Ansatsu Kyoushitsu</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('jjk')">Jujutsu Kaisen</button>
+    </div>
+    <div class="w3-container kota w3-animate-zoom">
+        <br><br>
+        <h1><center>Sinopsis Anime yang Saya Suka</center></h1>
+    </div>
+    <div id="profile" class="w3-container kota w3-animate-opacity" style="display:none">
+        <h2>Profile</h2>
+        <img src="josi.jpg" width="30%">
+        <p><b>Jovanka Siginendra</b></p>
+        <p><b>10121209</b></p>
+        <p><b>IF-6</b></p>
+        <br> 
+        <a href="index.html">Back</a>
+    </div>
+    <div id="Gotoubun" class="w3-container kota w3-animate-top" style="display:none">
+        <h2>Gotoubun no Hanayome</h2>
+        <img src="gotoubun.jpg">
+        <p>
+            The Quintessential Quintuplets atau 五等分の花嫁 (dalam bahasa jepang) adalah anime yang menceritakan tentang seorang remaja di tingkat SMA 
+            bernama Uesugi Futarou yang sangat pintar diminta untuk menjadi guru les private. Uesugi Futarou sangat terkejut karena yang 
+            diajar nya adalah teman sekelasnya sendiri. Ternyata mereka adalah gadis kembar lima yang suka membuat keributan. Masing-masing 
+            dari mereka memiliki keahliannya sendiri, akan tetapi mereka memiliki kesamaan yaitu "benci belajar". Mau tidak mau Uesugi harus
+            menjalankan tugas nya itu karena ia sangat membutuhkan uang.
+        </p>
+        <a href="index.html">back</a>
+    </div>
+    <div id="knnw" class="w3-container kota w3-animate-bottom" style="display:none">
+        <h2>Kimi no Nawa</h2>
+        <img src="knnw.png">
+        <p>
+            Your Name. atau 君の名は。(dalam bahasa jepang) adalah anime yang menceritakan tentang dua orang remaja yang bernama
+            Taki Tachibana dan Mitsuha Miyamizu, saling bertukar tubuh satu sama lain. Dua tokoh protagonis tersebut memiliki latar belakang 
+            yang sangat berbeda.
+        </p>
+        <a href="index.html">back</a>
+    </div>
+    <div id="ansatsu" class="w3-container kota w3-animate-right" style="display:none">
+        <h2>Ansatsu Kyoushitsu</h2>
+        <img src="koro.jpg">
+        <p>
+            Assassination Classroom atau 暗殺教室 (dalam bahasa jepang)  adalah anime yang menceritakan tentang seorang makhluk mirip gurita 
+            yang memiliki kekuatan sangat luar biasa yang bekerja sebagai wali kelas di sebuah sekolah menengah pertama, dan seluruh muridnya 
+            berusaha untuk membunuh nya untuk melindungi bumi dari kehancuran.
+        </p>
+        <a href="index.html">back</a>
+    </div>
+    <div id="jjk" class="w3-container kota w3-animate-left" style="display:none">
+        <h2>Jujutsu Kaisen</h2>
+        <img src="jjk.jpg">
+        <p>Jujutsu Kaisen atau  呪術廻戦 (dalam bahasa jepang) adalah anime yang menceritakan seorang siswa bernama Yuuji Itadori. Ia memiliki
+            kekuatan dan tenaga yang sangat luar biasa, alih alih ia mengikuti klub ilmu gaib. Namun suatu hari klub tersebut mendapatkan benda
+            terkutuk yang disegel. yang mengejutkan, benda tersebut merupakan serpihan iblis Ryoumen Sukuna. Karena kemampuan dari benda tersebut
+            sangat besar, banyak orang yang menginginkan benda tersebut. 
+        </p>
+        <a href="index.html">back</a>
+    </div>
+    <script>
+    function openKota(namaKota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(namaKota).style.display = "block";
+    }
+    </script>
+</body>
+</html>
